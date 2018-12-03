@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>web</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+   <servlet>
+    <servlet-name>cart</servlet-name>
+    <servlet-class>web.Cart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cart</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+
+   <servlet>
+    <servlet-name>cart1130</servlet-name>
+    <servlet-class>web.Cart1130</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cart1130</servlet-name>
+    <url-pattern>/cart1130</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>order</servlet-name>
+    <servlet-class>web.Order</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>order</servlet-name>
+    <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>stock</servlet-name>
+    <servlet-class>web.StockUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>stock</servlet-name>
+    <url-pattern>/stock</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>copy</servlet-name>
+    <servlet-class>web.copy</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>copy</servlet-name>
+    <url-pattern>/copy</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>order1130</servlet-name>
+    <servlet-class>web.Order1130</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>order1130</servlet-name>
+    <url-pattern>/order1130</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>search</servlet-name>
+    <servlet-class>web.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+
+</web-app>
